@@ -76,7 +76,11 @@ We have prepared three demo scenarios for you:
     ```bash
     micromamba run -n torch python /deepscan/Genesis_Quant_8k_model.py --input Quant_8k_training_set_first200.csv --out Quant_8k_training_set_first200_predicted.csv
     ```
-    
+4. Exit the container
+    ```bash
+    exit
+    ```   
+5. The exported result csv file is saved on the working directory and Genesis prediction score is in the **Genesis_Score** column.
 
 ### Operating systems
 - Linux is the native operating system
