@@ -34,9 +34,9 @@ We have prepared three demo scenarios for you:
     docker run -it --name <container name> -v <Mounted local directory>:/app pyqlib/qlib_image_stable:stable
     ```
 
-```
+
 ![DeepSCan_webserver](docs/_static/img/DeepSCan_webserver_v2.png)
-***
+
 
   
 ## DeepSCan Docker images
