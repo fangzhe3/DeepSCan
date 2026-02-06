@@ -1,3 +1,8 @@
+<h4 align="center">
+  <img src="docs/_static/DeepSCan_title.png" alt="DeepSCan logo" style="width:70%; ">
+  
+</h3>
+
 # DeepSCan platform
 
 ## 📰 News
@@ -79,7 +84,7 @@ We have prepared three demo scenarios for you:
 - Docker image can be run using Docker on macOS or WSL on Windows
 
 ### Software dependencies
-All required software packages are preinstalled in the docker image. This project assumes Python + PyTorch-based workflow
+All required software packages are preinstalled in the docker image. Users must ensure Docker is installed before attempting most scenarios. This project assumes Python + PyTorch-based workflow
 
 **Essential packages:**
 - Python: 3.11
