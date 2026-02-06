@@ -25,14 +25,19 @@ We have prepared three demo scenarios for you:
 
 # ⚡ Quick start
 ## DeepSCan webserver
-1. Pulling a docker image from a docker hub repository
+1. Open the DeepSCan web interface using provided [link](https://deepscan.sidichenlab.org/)
+2. Paste protein sequences in FASTA format into the input box, using examples below or sequences in demo dataset
     ```bash
-    docker pull zf77/deepscan:stable
+    >ECD_P69354
+    KGLSSTSIVYILIAVCLGGLIGIPALIC
+    >hTMC_EPCAM_v3_10
+    GLKAGVIAVLGIGIIAVVAGITFAVYSRKKRMAKYEKAEIKEDYQPYFRNHL
+    >hTMC_EPCAM_v3_4
+    GLKAGVIAVPVLLAIAVVAGILGYKRSRKKRMAKYEKAEIKENEAVMEVKAH
+    >hTMC_Q9UHN6
+    MYATDSRGHSPAFLQPQNGNSRHPSGYVPGKVVPLRPPPPPKSQASAKFTSIRREDRATFAFSPEEQQAQRESQKQKRHKNTFICFAITSFSFFIALAIILGISSKYAPDENCPDQNPRLR
     ```
-2. Start a new Docker container
-    ```bash
-    docker run -it --name <container name> -v <Mounted local directory>:/app pyqlib/qlib_image_stable:stable
-    ```
+4. Start a new Docker container
 
 
 ![DeepSCan_webserver](docs/_static/img/DeepSCan_webserver_v3.png)
