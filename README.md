@@ -1,9 +1,7 @@
 <h4 align="center">
-  <img src="docs/_static/DeepSCan_title.png" alt="DeepSCan logo" style="width:70%; ">
+  <img src="docs/_static/img/DeepSCan_logo_v2.png" alt="DeepSCan logo" style="width:70%; ">
   
 </h3>
-
-# DeepSCan platform
 
 ## 📰 News
 | 🗞️ News        | 📝 Description                 |
