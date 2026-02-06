@@ -3,14 +3,14 @@
   
 </h3>
 
-## 📰 News
+# 📰 News
 | 🗞️ News        | 📝 Description                 |
 | --            | ------      |
 | Hugging face release  | We release the Genesis Quant 8k attention pooling model on [Hugging Face](https://huggingface.co/zfan3/Genesis_Quant_8k_attention_pooling) |
 | Docker image release  | We launch the first DeepSCan stable image in [Docker](https://hub.docker.com/r/zf77/deepscan/tags) |
 | First Github release | **DeepSCan platform** is released on [Github](https://github.com/fangzhe3/DeepSCan) |
 
-## Introduction
+# 🌟 Introduction
 We are excited to announce the release of **DeepSCan platform**, a powerful tool that predicts cell surface translocation properties of single-pass transmembrane proteins (SPTM) from amino acid sequences. This repository contains the model training, inference and computational analysis codes, plus example demo
 
 DeepSCan is now available on [GitHub](https://github.com/fangzhe3/DeepSCan), and we welcome your star🌟!
@@ -63,18 +63,18 @@ We have prepared three demo scenarios for you:
 
 ---
 
-## DeepSCan Docker image installation
+# 🚀 Docker image installation
 1. Pulling DeepSCan docker image from the docker hub repository
     ```bash
     docker pull zf77/deepscan:stable
     ```
 2. Start a new Docker container and run Genesis model prediction using 
     ```bash
-    docker run --rm --gpus all -it zf77/deepscan:stable micromamba bash
+    docker run --rm --gpus all -it -v "$PWD:/work" -w /work zf77/deepscan:stable bash
     ```
 3. At this point you are in the docker environment and can run the Genesis model prediction using your datasets in csv file. An example:
     ```bash
-    micromamba run -n torch python Genesis_Quant_8k_model.py --input Quant_8k_training_set_first800.csv --out Quant_8k_training_set_first800_predicted.csv
+    micromamba run -n torch python /deepscan/Genesis_Quant_8k_model.py --input Quant_8k_training_set_first200.csv --out Quant_8k_training_set_first200_predicted.csv
     ```
     
 
