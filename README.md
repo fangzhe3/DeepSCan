@@ -46,61 +46,57 @@ We have prepared three demo scenarios for you:
   * Higher score indicates stronger surface expression level
   * Score of 1 represents expression levels of HLA (Type I) or CLEC4F (Type II) reference modules. Scores are log-transformed
   * Display dual model scores from Genesis and Omni models
-* **Genesis CST Category**: 
+* **Genesis CST Category**: CST0–5 represent derived Genesis prediction score categories, defined using cutoffs at 0.3, 0.55, 0.8, 1.0, and 1.2
+* **Topology**: describes how transmembrane protein is arranged on cell surface.
+  * Type I topology: Extracellular domain is at N terminus
+  * Type II topology: Extracellular domain is at C terminus
+* **TMD sequence**: only available in CSV file. Shows transmembrane domain (TMD) of single-pass transmembrane protein (SPTM)
 
 ![DeepSCan_webserver](docs/_static/img/DeepSCan_webserver_v3.png)
+
+
+
 ![235_CSD](docs/_static/img/235_CSD_v2.png)
 
-  
-## DeepSCan Docker images
-1. Pulling a docker image from a docker hub repository
+---
+
+## DeepSCan Docker image installation
+1. Pulling DeepSCan docker image from the docker hub repository
     ```bash
     docker pull zf77/deepscan:stable
     ```
-2. Start a new Docker container
+2. Start a new Docker container and run Genesis model prediction using 
     ```bash
-    docker run -it --name <container name> -v <Mounted local directory>:/app pyqlib/qlib_image_stable:stable
+    docker run --rm --gpus all -it zf77/deepscan:stable micromamba run -n torch python Genesis_Quant_8k_model.py --input Quant_8k_training_set_first800.csv --out Quant_8k_training_set_first800_predicted.csv
     ```
-3. At this point you are in the docker environment and can run the qlib scripts. An example:
+3. At this point you are in the docker environment and can run the Genesis model prediction using your datasets in csv file. An example:
     ```bash
-    >>> python scripts/get_data.py qlib_data --name qlib_data_simple --target_dir ~/.qlib/qlib_data/cn_data --interval 1d --region cn
-    >>> python qlib/cli/run.py examples/benchmarks/LightGBM/workflow_config_lightgbm_Alpha158.yaml
+    micromamba run -n torch python Genesis_Quant_8k_model.py --input Quant_8k_training_set_first800.csv --out Quant_8k_training_set_first800_predicted.csv
     ```
     
+
 ### Operating systems
-- Linux (recommended)
-- macOS (CPU inference supported)
-- Windows (CPU inference supported; GPU support depends on CUDA/PyTorch build)
+- Linux is the native operating system
+- Docker image can be run using Docker on macOS or WSL on Windows
 
 ### Software dependencies
-This project assumes Python + PyTorch-based workflow.
+All required software packages are preinstalled in the docker image. This project assumes Python + PyTorch-based workflow. 
 
-**Minimum**
-- Python: **3.10+**
-- PyTorch: **2.1+**
-- CUDA: **11.8+** (only if using NVIDIA GPU)
+**Essential packages:**
+- Python: 3.11
+- PyTorch: 2.5.1
+- PyTorch-CUDA: 12.4
 - Common packages:
   - numpy
   - pandas
   - scipy
-  - scikit-learn
   - tqdm
-  - pyyaml
-  - biopython (FASTA handling)
-
-**If using ESM / transformer encoders**
-- fair-esm or esm library (version pinned in `environment.yml` / `requirements.txt`)
-- transformers (optional; only if used)
-
-> If you provide `environment.yml` and/or `requirements.txt`, pin exact versions there.
-
-### Tested versions
-Fill in what you have actually tested:
-- OS: Ubuntu 22.04 / 20.04
-- Python: 3.10.x
-- PyTorch: 2.1.x / 2.2.x
-- CUDA: 11.8
-- NVIDIA driver: 535+ (if GPU)
+  - fair-esm
+  - conda-forge::transformers
+  - anaconda::evaluate
+  - anaconda::scikit-learn
+  - jupyterlab
+  - ipykernel
 
 ### Hardware requirements
 **Standard (CPU)**
@@ -108,20 +104,10 @@ Fill in what you have actually tested:
 - RAM: 8–16 GB recommended
 
 **Accelerated (GPU, recommended for speed)**
-- NVIDIA GPU with **>= 12 GB VRAM** recommended (works with less depending on model/batch size)
-- Non-standard hardware (if applicable): none
+- NVIDIA GPU with **>= 12 GB VRAM** recommended
+- Non-standard hardware: none
 
 ---
-
-## 2. Installation guide
-
-### Option A (recommended): conda environment
-1. Install Miniconda/Anaconda.
-2. Create the environment:
-   ```bash
-   conda env create -f environment.yml
-   conda activate deepscan
-
 
 ## 📃 Citation
 - [AI-guided de novo design and generation of potent cell surface display elements (to be published)]
