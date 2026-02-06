@@ -44,7 +44,7 @@ We have prepared three demo scenarios for you:
 * **Sequence length**
 * **Prediction scores**:
   * Higher score indicates stronger surface expression level
-  * Score of 1 represents expression levels of HLA (Type I) or CLEC4F (Type II) reference modules.
+  * Score of 1 represents expression levels of HLA (Type I) or CLEC4F (Type II) reference modules
   * Scores are log-transformed
   * Display dual model scores from Genesis and Omni models
 * **Genesis CST Category**: CST0–5 represent derived Genesis prediction score categories, defined using cutoffs at 0.3, 0.55, 0.8, 1.0, and 1.2
