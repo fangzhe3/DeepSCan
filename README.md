@@ -1,5 +1,5 @@
 <h4 align="center">
-  <img src="docs/_static/img/DeepSCan_logo_v2.png" alt="DeepSCan logo" style="width:70%; ">
+  <img src="docs/_static/img/DeepSCan_logo_v3.png" alt="DeepSCan logo" style="width:70%; ">
   
 </h3>
 
@@ -48,9 +48,10 @@ We have prepared three demo scenarios for you:
 * **Prediction scores**:
   * Higher score indicates stronger surface expression level
   * Score of 1 represents expression levels of HLA (Type I) or CLEC4F (Type II) reference modules
-  * Scores are log-transformed
+  * Scores are log-transformed surface expression levels measured by flow cytometry
   * Display dual model scores from Genesis and Omni models
-* **Genesis CST Category**: CST0–5 represent derived Genesis prediction score categories, defined using cutoffs at 0.3, 0.55, 0.8, 1.0, and 1.2
+* **Genesis CST Category**:
+  * CST0–5 represent derived Genesis prediction score categories, defined using cutoffs at 0.3, 0.55, 0.8, 1.0, and 1.2 (**Fig. 235 CSD**)
 * **Topology**: describes how transmembrane protein is arranged on cell surface
   * Type I topology: Extracellular domain is at N terminus
   * Type II topology: Extracellular domain is at C terminus
@@ -82,7 +83,7 @@ We have prepared three demo scenarios for you:
 - Docker image can be run using Docker on macOS or WSL on Windows
 
 ### Software dependencies
-All required software packages are preinstalled in the docker image. Users must ensure Docker is installed before attempting most scenarios. This project assumes Python + PyTorch-based workflow
+All required software packages are preinstalled in the docker image. Users must ensure Docker is installed before attempting Docker-related scenarios. This project assumes Python + PyTorch-based workflow
 
 **Essential packages:**
 - Python: 3.11
