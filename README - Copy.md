@@ -52,9 +52,7 @@ We have prepared three demo scenarios for you:
   * Type II topology: Extracellular domain is at C terminus
 * **TMD sequence**: only available in CSV file. Shows transmembrane domain (TMD) of single-pass transmembrane protein (SPTM)
 
-![DeepSCan_webserver](docs/_static/img/DeepSCan_webserver_v3.png)
-
-
+![DeepSCan_webserver](docs/_static/img/DeepSCan_webserver_v4.png)
 
 ![235_CSD](docs/_static/img/235_CSD_v2.png)
 
@@ -67,7 +65,7 @@ We have prepared three demo scenarios for you:
     ```
 2. Start a new Docker container and run Genesis model prediction using 
     ```bash
-    docker run --rm --gpus all -it zf77/deepscan:stable micromamba run -n torch python Genesis_Quant_8k_model.py --input Quant_8k_training_set_first800.csv --out Quant_8k_training_set_first800_predicted.csv
+    docker run --rm --gpus all -it zf77/deepscan:stable micromamba bash
     ```
 3. At this point you are in the docker environment and can run the Genesis model prediction using your datasets in csv file. An example:
     ```bash
