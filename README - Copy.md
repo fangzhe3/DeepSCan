@@ -37,11 +37,19 @@ We have prepared three demo scenarios for you:
     >hTMC_Q9UHN6
     MYATDSRGHSPAFLQPQNGNSRHPSGYVPGKVVPLRPPPPPKSQASAKFTSIRREDRATFAFSPEEQQAQRESQKQKRHKNTFICFAITSFSFFIALAIILGISSKYAPDENCPDQNPRLR
     ```
-4. Start a new Docker container
-
+4. Click the Run Prediction button
+5. Once prediction is complete, click Download CSV button
+6. Interpret the results. The output CSV file typically includes:
+* **Sequence ID**: taken from the FASTA header
+* **Sequence length**
+* **Prediction scores**:
+  * Higher score indicates stronger surface expression level
+  * Score of 1 represents expression levels of HLA (Type I) or CLEC4F (Type II) reference modules. Scores are log-transformed
+  * Display dual model scores from Genesis and Omni models
+* **Genesis CST Category**: 
 
 ![DeepSCan_webserver](docs/_static/img/DeepSCan_webserver_v3.png)
-
+![235_CSD](docs/_static/img/235_CSD_v2.png)
 
   
 ## DeepSCan Docker images
