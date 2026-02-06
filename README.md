@@ -15,11 +15,11 @@ DeepSCan is now available on [GitHub](https://github.com/fangzhe3/DeepSCan), and
 We have prepared three demo scenarios for you:
 | Scenario | Link | Processing speed | Testing environment
 | --                      | ------    | ------    | ------    |
-| DeepSCan webserver | [Link](https://deepscan.sidichenlab.org/) | 20 sequences, 1000 tokens, 8 seconds | Genesis & Omni model on AWS EC2 t3a CPU 
-| DeepSCan docker image (CPU) | [Link](https://hub.docker.com/r/zf77/deepscan/tags) | 800 sequences, 139263 tokens, 138 seconds | Genesis model on Intel i7 13700
-| DeepSCan docker image (GPU) | [Link](https://hub.docker.com/r/zf77/deepscan/tags) | 800 sequences, 139263 tokens, 12 seconds | Genesis model on GeForce RTX 4050
+| DeepSCan webserver | [Link](https://deepscan.sidichenlab.org/) | 20 sequences, 1000 tokens, 8 sec | Genesis & Omni model on AWS CPU 
+| Docker CPU | [Link](https://hub.docker.com/r/zf77/deepscan/tags) | 800 sequences, 139263 tokens, 138 sec | Genesis model on Intel i7 13700
+| Docker GPU | [Link](https://hub.docker.com/r/zf77/deepscan/tags) | 800 sequences, 139263 tokens, 12 sec | Genesis model on GeForce RTX 4050
 
-**Notes**: DeepSCan docker image supports both CPU & GPU excution (when a compatible GPU is available). Processing speed depends on the runtime environment. The benchmark specifications shown above were measured on a Dell XPS 15 9530.
+**Notes**: DeepSCan docker image supports both CPU & GPU excution. Processing speed depends on the runtime environment. Benchmark specifications were measured on a Dell XPS15 9530.
 
 ---
 
@@ -44,7 +44,8 @@ We have prepared three demo scenarios for you:
 * **Sequence length**
 * **Prediction scores**:
   * Higher score indicates stronger surface expression level
-  * Score of 1 represents expression levels of HLA (Type I) or CLEC4F (Type II) reference modules. Scores are log-transformed
+  * Score of 1 represents expression levels of HLA (Type I) or CLEC4F (Type II) reference modules.
+  * Scores are log-transformed
   * Display dual model scores from Genesis and Omni models
 * **Genesis CST Category**: CST0–5 represent derived Genesis prediction score categories, defined using cutoffs at 0.3, 0.55, 0.8, 1.0, and 1.2
 * **Topology**: describes how transmembrane protein is arranged on cell surface.
