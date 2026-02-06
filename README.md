@@ -8,7 +8,7 @@
 | First Github release | **DeepSCan platform** is released on [Github](https://github.com/fangzhe3/DeepSCan) |
 
 ## Introduction
-We are excited to announce the release of **DeepSCan platform**, a powerful tool that predicts cell surface translocation properties of single-pass transmembrane proteins (SPTM) from amino acid sequences. This repository contains the model training, inference and computational analysis codes, plus example demo.
+We are excited to announce the release of **DeepSCan platform**, a powerful tool that predicts cell surface translocation properties of single-pass transmembrane proteins (SPTM) from amino acid sequences. This repository contains the model training, inference and computational analysis codes, plus example demo
 
 DeepSCan is now available on [GitHub](https://github.com/fangzhe3/DeepSCan), and we welcome your star🌟!
 
@@ -19,7 +19,7 @@ We have prepared three demo scenarios for you:
 | Docker CPU | [Link](https://hub.docker.com/r/zf77/deepscan/tags) | 800 sequences, 139263 tokens, 138 sec | Genesis model on Intel i7 13700
 | Docker GPU | [Link](https://hub.docker.com/r/zf77/deepscan/tags) | 800 sequences, 139263 tokens, 12 sec | Genesis model on GeForce RTX 4050
 
-**Notes**: DeepSCan docker image supports both CPU & GPU excution. Processing speed depends on the runtime environment. Benchmark specifications were measured on a Dell XPS15 9530.
+**Notes**: DeepSCan docker image supports both CPU & GPU excution. Processing speed depends on the runtime environment. Benchmark specifications were measured on a Dell XPS15 9530
 
 ---
 
@@ -48,7 +48,7 @@ We have prepared three demo scenarios for you:
   * Scores are log-transformed
   * Display dual model scores from Genesis and Omni models
 * **Genesis CST Category**: CST0–5 represent derived Genesis prediction score categories, defined using cutoffs at 0.3, 0.55, 0.8, 1.0, and 1.2
-* **Topology**: describes how transmembrane protein is arranged on cell surface.
+* **Topology**: describes how transmembrane protein is arranged on cell surface
   * Type I topology: Extracellular domain is at N terminus
   * Type II topology: Extracellular domain is at C terminus
 * **TMD sequence**: only available in CSV file. Shows transmembrane domain (TMD) of single-pass transmembrane protein (SPTM)
@@ -79,7 +79,7 @@ We have prepared three demo scenarios for you:
 - Docker image can be run using Docker on macOS or WSL on Windows
 
 ### Software dependencies
-All required software packages are preinstalled in the docker image. This project assumes Python + PyTorch-based workflow. 
+All required software packages are preinstalled in the docker image. This project assumes Python + PyTorch-based workflow
 
 **Essential packages:**
 - Python: 3.11
