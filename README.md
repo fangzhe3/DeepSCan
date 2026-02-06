@@ -15,9 +15,9 @@ DeepSCan is now available on [GitHub](https://github.com/fangzhe3/DeepSCan), and
 We have prepared three demo scenarios for you:
 | Scenario | Link | Processing speed | Testing environment
 | --                      | ------    | ------    | ------    |
-| DeepSCan webserver | [Link](https://deepscan.sidichenlab.org/) | 20 sequences, 1000 tokens, 8 seconds | Genesis & Omni model on AWS EC2 CPU 
-| DeepSCan Docker CPU | [Link](https://hub.docker.com/r/zf77/deepscan/tags) | 800 sequences, 139263 tokens, 138 seconds | Genesis model on Intel i7 13700
-| DeepSCan Docker GPU | [Link](https://hub.docker.com/r/zf77/deepscan/tags) | 800 sequences, 139263 tokens, 12 seconds | Genesis model on GeForce RTX 4050
+| DeepSCan webserver | [Link](https://deepscan.sidichenlab.org/) | 20 sequences, 1000 tokens, 8 sec | Genesis & Omni model on AWS CPU 
+| Docker CPU | [Link](https://hub.docker.com/r/zf77/deepscan/tags) | 800 sequences, 139263 tokens, 138 sec | Genesis model on Intel i7 13700
+| Docker GPU | [Link](https://hub.docker.com/r/zf77/deepscan/tags) | 800 sequences, 139263 tokens, 12 sec | Genesis model on GeForce RTX 4050
 
 **Notes**: DeepSCan docker image supports both CPU & GPU excution (when a compatible GPU is available). Processing speed depends on the runtime environment. The benchmark specifications shown above were measured on a Dell XPS 15 9530.
 
