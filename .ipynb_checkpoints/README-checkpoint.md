@@ -35,7 +35,7 @@ We have prepared three demo scenarios for you:
     ```
 
 
-![DeepSCan_webserver](docs/_static/img/DeepSCan_webserver.png)
+![DeepSCan_webserver](docs/_static/img/DeepSCan_webserver_v3.png)
 
 
   
