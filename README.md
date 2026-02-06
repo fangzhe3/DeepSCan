@@ -52,9 +52,7 @@ We have prepared three demo scenarios for you:
   * Type II topology: Extracellular domain is at C terminus
 * **TMD sequence**: only available in CSV file. Shows transmembrane domain (TMD) of single-pass transmembrane protein (SPTM)
 
-![DeepSCan_webserver](docs/_static/img/DeepSCan_webserver_v3.png)
-
-
+![DeepSCan_webserver](docs/_static/img/DeepSCan_webserver_v4.png)
 
 ![235_CSD](docs/_static/img/235_CSD_v2.png)
 
