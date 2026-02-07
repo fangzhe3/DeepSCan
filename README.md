@@ -63,13 +63,6 @@ We have prepared three demo scenarios for you:
 
 ---
 
-# Pip installation
-* You can directly install deepscan package from PyPI:
-  ```bash
-  pip install deepscan
-  ```
-
----
 
 # 🐳 Docker image installation
 1. Pulling DeepSCan docker image from the docker hub repository
@@ -80,7 +73,7 @@ We have prepared three demo scenarios for you:
     ```bash
     docker run --rm --gpus all -it -v "$PWD:/work" -w /work zf77/deepscan:stable-v3 bash
     ```
-3. At this point you are in the docker environment and can run Genesis model prediction. An example using demo dataset:
+3. At this point you are in the docker environment and can run Genesis model prediction. An example using [demo dataset](https://github.com/fangzhe3/DeepSCan/tree/main/Demo_datasets):
     ```bash
     deepscan --input Quant_8k_training_set_first200.csv --output Quant_8k_training_set_first200_predicted.csv
     ```
