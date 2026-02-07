@@ -74,15 +74,15 @@ We have prepared three demo scenarios for you:
 # 🐳 Docker image installation
 1. Pulling DeepSCan docker image from the docker hub repository
     ```bash
-    docker pull zf77/deepscan:stable
+    docker pull zf77/deepscan:stable-v3
     ```
 2. Start a new Docker container and mount working directory
     ```bash
-    docker run --rm --gpus all -it -v "$PWD:/work" -w /work zf77/deepscan:stable bash
+    docker run --rm --gpus all -it -v "$PWD:/work" -w /work zf77/deepscan:stable-v3 bash
     ```
 3. At this point you are in the docker environment and can run Genesis model prediction. An example using demo dataset:
     ```bash
-    micromamba run -n torch python /deepscan/Genesis_Quant_8k_model.py --input Quant_8k_training_set_first200.csv --out Quant_8k_training_set_first200_predicted.csv
+    deepscan --input Quant_8k_training_set_first200.csv --output Quant_8k_training_set_first200_predicted.csv
     ```
 4. Exit the container
     ```bash
@@ -94,7 +94,7 @@ We have prepared three demo scenarios for you:
 
 ### Operating systems
 - Linux is the native operating system
-- Docker image can be run using Docker on macOS or WSL on Windows
+- Docker image can be run using Docker on macOS or WSL 2 on Windows (make sure docker desktop is running)
 
 ### Software dependencies
 All required software packages are preinstalled in the docker image. Users must ensure Docker is installed before attempting Docker-related scenarios. This project assumes Python + PyTorch-based workflow
