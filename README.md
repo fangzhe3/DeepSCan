@@ -22,7 +22,7 @@ We have prepared three demo scenarios for you:
 | Docker CPU | [Link](https://hub.docker.com/r/zf77/deepscan/tags) | 800 sequences, 139263 tokens, 138 sec | Genesis model on Intel i7 13700
 | Docker GPU | [Link](https://hub.docker.com/r/zf77/deepscan/tags) | 800 sequences, 139263 tokens, 12 sec | Genesis model on GeForce RTX 4050
 
-**Notes**: DeepSCan docker image supports both CPU & GPU excution. Processing speed depends on the runtime environment. Benchmark specifications were measured on a Dell XPS15 9530
+**Notes**: DeepSCan docker image supports both CPU & GPU execution. Processing speed depends on the runtime environment. Benchmark specifications were measured on a Dell XPS15 9530
 
 ---
 
