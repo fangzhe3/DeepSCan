@@ -124,6 +124,7 @@ All required software packages are preinstalled in the docker image. Users must 
 @article{Fang2026deepscan,
 title = {AI-guided de novo design and generation of potent cell surface display elements},
 author = {Zhenhao Fang and Joshua Saskin and Seok-Hoon Lee and Charles Zou and Shan Xin and Xiaoyu Huang and Xingxin Pan and Chuanpeng Dong and Ardavan Abiri and Nidhi Sahni and Yanzhi Feng and Lei Peng and S. Stephen Yi and Sidi Chen},
+journal = {Nature Biotechnology (Accepted in Principle)},
 year = {2026},
 }
 ```
