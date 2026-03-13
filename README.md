@@ -119,7 +119,7 @@ All required software packages are preinstalled in the docker image. Users must 
 ---
 
 ## 📃 Citation
-- [AI-guided de novo design and generation of potent cell surface display elements (to be published)]
+- [AI-guided design and generation of potent cell surface display elements]
 ```bibtex
 @article{Fang2026deepscan,
 title = {Discovery and design of potent cell surface display elements},
