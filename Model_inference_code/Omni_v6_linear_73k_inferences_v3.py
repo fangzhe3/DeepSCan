@@ -506,6 +506,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 base_model = AutoModel.from_pretrained(model_name)
 model = Omni5in1(base_model, head_type=head_type)
 
+# model weights can be downloaded from huggingface: zfan3/5in1_OneStage_223half22_Omni_73k_linear_v6_head_benchmarking
 state_dict = load_file("../DeepSCan_models/5in1_OneStage_223half22_Omni_73k_linear_v6_head_benchmarking/checkpoint-33158/model.safetensors")
 missing_keys, unexpected_keys = model.load_state_dict(state_dict, strict=False)
 print("Missing keys:", missing_keys)
